@@ -24,7 +24,7 @@
 # addition_fee = 0
 # display payment: 'Payment of self taken...' = payment(weight)
 ######################
-weight = input('Input the weight...')
+weight = int( input('Input the weight...') )
 def payment(weight, costs):
 	costs['first_kg'] + (weight - 1) * costs['addition_kg'] + costs['addition_fee']
 
