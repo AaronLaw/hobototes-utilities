@@ -13,3 +13,27 @@ ADDITION_KG = 5
 ADDITION_FEE = 25
 
 payment = FIRST_KG + (weight - 1)*ADDITION_KG + ADDITION_FEE
+----
+PSEUDO CODE: 選好寄去邊，show 郵費
+============
+weight = raw_input
+round weight to next integer
+dist = raw_input
+
+dist:
+case: send to home
+first_kg = 15
+addition_kg = 5
+addition_fee = 25
+case: send to factory
+first_kg = 15
+addition_kg = 5
+addition_fee = 0
+case: self taken
+first_kg = 10
+addition_kg = 6
+addition_fee = 0
+
+payment = first_kg + (weight - 1) * addition_kg + addition_fee
+display payment
+
