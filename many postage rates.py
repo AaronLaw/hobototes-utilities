@@ -26,13 +26,13 @@
 ######################
 weight = int( input('Input the weight...') )
 def payment(weight, costs):
-	costs['first_kg'] + (weight - 1) * costs['addition_kg'] + costs['addition_fee']
+	return costs['first_kg'] + (weight - 1) * costs['addition_kg'] + costs['addition_fee']
 
 costs = {'first_kg':15, 'addition_kg':5, 'addition_fee':25}
-print ('送去家需付... %s' % payment(weight, costs) )
+print ('送去家需付... RMB %s' % payment(weight, costs) )
 
-costs = {'first_kg':15, 'addition_kg':5, 'addition_fee':25}
-print ('送去公司需付...%s' % payment(weight, costs) )
+costs = {'first_kg':15, 'addition_kg':5, 'addition_fee':0}
+print ('送去公司需付...RMB %s' % payment(weight, costs) )
 
-costs = {'first_kg':15, 'addition_kg':5, 'addition_fee':25}
-print ('自取需付...%s' % payment(weight, costs) )
+costs = {'first_kg':10, 'addition_kg':6, 'addition_fee':0}
+print ('自取需付...RMB %s' % payment(weight, costs) )
